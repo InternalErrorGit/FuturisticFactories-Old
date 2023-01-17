@@ -1,0 +1,26 @@
+ALUMINUM
+BISMUTH
+LEAD
+IRON
+GALLIUM
+GOLD
+IRIDIUM
+COPPER
+NICKEL
+OSMIUM
+PLATINUM
+SILVER
+URANIUM
+ZINC
+TIN
+
+Ingot
+Nugget
+Ore
+Deepslate ore
+Nether Ore
+Dust
+Shard
+Crystal
+Clump
+Storage Block
