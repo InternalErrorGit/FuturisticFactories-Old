@@ -5,6 +5,8 @@
 *.ipr
 *.iws
 
+src/generated/resources/assets/
+
 # IntelliJ
 out/
 # mpeltonen/sbt-idea plugin
