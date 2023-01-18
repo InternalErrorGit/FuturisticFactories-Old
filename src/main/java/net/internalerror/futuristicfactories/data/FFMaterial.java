@@ -23,7 +23,7 @@ public enum FFMaterial {
     zinc(FFItem.zinc_clump, FFItem.zinc_crystal, FFItem.zinc_dust, FFItem.zinc_dust_dirty, FFItem.zinc_ingot, FFItem.zinc_nugget, FFItem.zinc_raw, FFItem.zinc_shard, FFBlockItem.zinc_ore, FFBlockItem.zinc_deepslate_ore, FFBlockItem.zinc_block_raw, FFBlockItem.zinc_block, FFBlockItem.zinc_nether_ore, FFBlock.zinc_ore, FFBlock.zinc_deepslate_ore, FFBlock.zinc_block_raw, FFBlock.zinc_block, FFBlock.zinc_nether_ore, FFItemTags.zinc_clump, FFItemTags.zinc_crystal, FFItemTags.zinc_dust, FFItemTags.zinc_dust_dirty, FFItemTags.zinc_ingot, FFItemTags.zinc_nugget, FFItemTags.zinc_raw, FFItemTags.zinc_shard, FFItemTags.zinc_ore, FFItemTags.zinc_deepslate_ore, FFItemTags.zinc_block_raw, FFItemTags.zinc_block, FFItemTags.zinc_nether_ore, FFBlockTags.zinc_ore, FFBlockTags.zinc_deepslate_ore, FFBlockTags.zinc_block_raw, FFBlockTags.zinc_block, FFBlockTags.zinc_nether_ore);
 
     private final FFRegistryItem clump;
-    private final FFRegistryObject<Item> crystal;
+    private final FFRegistryItem crystal;
     private final FFRegistryItem dust;
     private final FFRegistryItem dustDirty;
     private final FFRegistryItem ingot;
@@ -59,7 +59,7 @@ public enum FFMaterial {
     private final TagKey<Block> blockBlockTag;
     private final TagKey<Block> netherOreBlockTag;
 
-    FFMaterial(FFRegistryItem clump, FFRegistryObject<Item> crystal, FFRegistryItem dust, FFRegistryItem dustDirty, FFRegistryItem ingot, FFRegistryItem nugget, FFRegistryItem raw, FFRegistryItem shard, FFRegistryBlockItem ore, FFRegistryBlockItem deepslateOre, FFRegistryBlockItem blockRaw, FFRegistryBlockItem block, FFRegistryBlockItem netherOre, FFRegistryBlock oreBlock, FFRegistryBlock deepslateOreBlock, FFRegistryBlock blockRawBlock, FFRegistryBlock blockBlock, FFRegistryBlock netherOreBlock, TagKey<Item> clumpTag, TagKey<Item> crystalTag, TagKey<Item> dustTag, TagKey<Item> dustDirtyTag, TagKey<Item> ingotTag, TagKey<Item> nuggetTag, TagKey<Item> rawTag, TagKey<Item> shardTag, TagKey<Item> oreTag, TagKey<Item> deepslateOreTag, TagKey<Item> blockRawTag, TagKey<Item> blockTag, TagKey<Item> netherOreTag, TagKey<Block> oreBlockTag, TagKey<Block> deepslateOreBlockTag, TagKey<Block> blockRawBlockTag, TagKey<Block> blockBlockTag, TagKey<Block> netherOreBlockTag) {
+    FFMaterial(FFRegistryItem clump, FFRegistryItem crystal, FFRegistryItem dust, FFRegistryItem dustDirty, FFRegistryItem ingot, FFRegistryItem nugget, FFRegistryItem raw, FFRegistryItem shard, FFRegistryBlockItem ore, FFRegistryBlockItem deepslateOre, FFRegistryBlockItem blockRaw, FFRegistryBlockItem block, FFRegistryBlockItem netherOre, FFRegistryBlock oreBlock, FFRegistryBlock deepslateOreBlock, FFRegistryBlock blockRawBlock, FFRegistryBlock blockBlock, FFRegistryBlock netherOreBlock, TagKey<Item> clumpTag, TagKey<Item> crystalTag, TagKey<Item> dustTag, TagKey<Item> dustDirtyTag, TagKey<Item> ingotTag, TagKey<Item> nuggetTag, TagKey<Item> rawTag, TagKey<Item> shardTag, TagKey<Item> oreTag, TagKey<Item> deepslateOreTag, TagKey<Item> blockRawTag, TagKey<Item> blockTag, TagKey<Item> netherOreTag, TagKey<Block> oreBlockTag, TagKey<Block> deepslateOreBlockTag, TagKey<Block> blockRawBlockTag, TagKey<Block> blockBlockTag, TagKey<Block> netherOreBlockTag) {
         this.clump = clump;
         this.crystal = crystal;
         this.dust = dust;
