@@ -14,13 +14,17 @@ URANIUM
 ZINC
 TIN
 
+Clump
+Crystal
+Dirty Dust
+Dust
 Ingot
 Nugget
+Shard
 Ore
 Deepslate ore
+
 Nether Ore
-Dust
-Shard
-Crystal
-Clump
 Storage Block
+Raw Block
+
