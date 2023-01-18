@@ -1,7 +1,9 @@
 package net.internalerror.futuristicfactories.data;
 
 import net.internalerror.futuristicfactories.data.generator.FFBlockStateProvider;
+import net.internalerror.futuristicfactories.data.generator.FFBlockTagsProvider;
 import net.internalerror.futuristicfactories.data.generator.FFLanguageProvider;
+import net.internalerror.futuristicfactories.data.generator.FFRecipeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -14,11 +16,13 @@ import static net.internalerror.futuristicfactories.FuturisticFactories.MOD_ID;
 public class FFDataGenerators {
 
     @SubscribeEvent
-    public static void gatherData(GatherDataEvent event){
-        DataGenerator generator = event.getGenerator();
+    public static void gatherData(GatherDataEvent event) {
+        DataGenerator dataGenerator = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
-        generator.addProvider(true, new FFLanguageProvider(generator));
-        generator.addProvider(true, new FFBlockStateProvider(generator, existingFileHelper));
+        dataGenerator.addProvider(true, new FFLanguageProvider(dataGenerator));
+        dataGenerator.addProvider(true, new FFBlockStateProvider(dataGenerator, existingFileHelper));
+        dataGenerator.addProvider(true, new FFRecipeProvider(dataGenerator));
+        dataGenerator.addProvider(true, new FFBlockTagsProvider(dataGenerator, existingFileHelper));
     }
 }

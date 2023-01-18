@@ -14,17 +14,4 @@ URANIUM
 ZINC
 TIN
 
-Clump
-Crystal
-Dirty Dust
-Dust
-Ingot
-Nugget
-Shard
-Ore
-Deepslate ore
-
-Nether Ore
-Storage Block
-Raw Block
 

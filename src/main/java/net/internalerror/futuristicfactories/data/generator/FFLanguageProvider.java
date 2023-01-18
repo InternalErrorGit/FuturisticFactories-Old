@@ -16,7 +16,7 @@ public class FFLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        FFBlock.getAll().forEach(block -> add(block.getRegistryObject().get(), block.getName()));
+        FFBlock.Util.getBlocks().forEach(block -> add(block.getRegistryObject().get(), block.getName()));
         FFItem.getAll().forEach(item -> add(item.getRegistryObject().get(), item.getName()));
     }
 }

@@ -8,7 +8,7 @@ import static net.minecraft.world.item.Items.COMMAND_BLOCK;
 
 public class FFTabs extends CreativeModeTab {
 
-    public static final FFTabs MATERIALS = new FFTabs(CreativeModeTab.TABS.length, "FF Materials");
+    public static final FFTabs MATERIALS = new FFTabs(CreativeModeTab.TABS.length, "ff_materials");
 
     public FFTabs(int index, String name) {
         super(index, name);

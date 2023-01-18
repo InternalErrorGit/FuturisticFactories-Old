@@ -14,6 +14,6 @@ public class FFBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        FFBlock.getSimpleBlocks().forEach(block -> simpleBlock(block.getRegistryObject().get()));
+        FFBlock.Util.getSimpleBlocks().forEach(block -> simpleBlock(block.getRegistryObject().get()));
     }
 }

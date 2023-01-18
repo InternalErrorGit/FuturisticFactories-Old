@@ -5,7 +5,7 @@
 *.ipr
 *.iws
 
-src/generated/resources/assets/
+src/generated/
 
 # IntelliJ
 out/

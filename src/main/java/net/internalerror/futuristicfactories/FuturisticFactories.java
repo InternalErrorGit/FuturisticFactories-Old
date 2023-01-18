@@ -33,5 +33,12 @@ public class FuturisticFactories {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    public static FFResourceLocation getId(String path){
+        if (path.contains(":")){
+            throw new IllegalArgumentException("Path contains namespace");
+        }
+        return new FFResourceLocation(path);
+    }
+
 
 }

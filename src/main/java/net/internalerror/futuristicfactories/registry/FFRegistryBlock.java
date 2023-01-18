@@ -5,32 +5,15 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-public class FFRegistryBlock {
-
-    private final RegistryObject<Block> registryObject_;
-    private final String name_;
-    private final Supplier<Block> supplier_;
+public class FFRegistryBlock extends FFRegistryObject<Block> {
 
     public FFRegistryBlock(String name, Supplier<Block> supplier) {
-        this.name_ = name;
-        this.supplier_ = supplier;
-        this.registryObject_ = FFBlock.register(this);
-    }
-
-    public Supplier<Block> getSupplier() {
-        return supplier_;
-    }
-
-    public RegistryObject<Block> getRegistryObject() {
-        return registryObject_;
-    }
-
-    public String getName() {
-        return name_;
+        super(name, supplier);
     }
 
     @Override
-    public String toString() {
-        return String.format("%s: %s", name_, registryObject_.getKey());
+    protected RegistryObject<Block> register() {
+        return FFBlock.register(this);
     }
+
 }
