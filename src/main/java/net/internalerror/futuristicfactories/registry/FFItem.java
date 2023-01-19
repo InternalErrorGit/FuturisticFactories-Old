@@ -168,6 +168,33 @@ public class FFItem {
     public static final FFRegistryItem zinc_raw = new FFRegistryItem("zinc_raw", () -> new Item(new Item.Properties().tab(FFTabs.MATERIALS)));
     public static final FFRegistryItem zinc_shard = new FFRegistryItem("zinc_shard", () -> new Item(new Item.Properties().tab(FFTabs.MATERIALS)));
 
+    public static final FFRegistryItem soldering_mixture = new FFRegistryItem("soldering_mixture", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem solderer = new FFRegistryItem("solderer", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem circuit_board = new FFRegistryItem("circuit_board", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem transistor = new FFRegistryItem("transistor", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem transformer = new FFRegistryItem("transformer", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem resistor = new FFRegistryItem("resistor", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem gold_wire = new FFRegistryItem("gold_wire", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem copper_wire = new FFRegistryItem("copper_wire", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem silver_wire = new FFRegistryItem("silver_wire", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+
+    public static final FFRegistryItem basic_controlling_circuit = new FFRegistryItem("basic_controlling_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem advanced_controlling_circuit = new FFRegistryItem("advanced_controlling_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem elite_controlling_circuit = new FFRegistryItem("elite_controlling_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem basic_redstone_circuit = new FFRegistryItem("basic_redstone_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem advanced_redstone_circuit = new FFRegistryItem("advanced_redstone_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem elite_redstone_circuit = new FFRegistryItem("elite_redstone_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem basic_logistics_circuit = new FFRegistryItem("basic_logistics_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem advanced_logistics_circuit = new FFRegistryItem("advanced_logistics_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem elite_logistics_circuit = new FFRegistryItem("elite_logistics_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem basic_efficiency_circuit = new FFRegistryItem("basic_efficiency_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem advanced_efficiency_circuit = new FFRegistryItem("advanced_efficiency_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem elite_efficiency_circuit = new FFRegistryItem("elite_efficiency_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem basic_effectivity_circuit = new FFRegistryItem("basic_effectivity_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem advanced_effectivity_circuit = new FFRegistryItem("advanced_effectivity_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+    public static final FFRegistryItem elite_effectivity_circuit = new FFRegistryItem("elite_effectivity_circuit", () -> new Item(new Item.Properties().tab(FFTabs.COMPONENTS)));
+
+
     public static RegistryObject<Item> register(FFRegistryItem registryItem) {
         FuturisticFactories.LOGGER.debug("Registering >> {}", registryItem.getName());
         list.add(registryItem);

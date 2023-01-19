@@ -27,16 +27,28 @@ public class FFBlockTagsProvider extends BlockTagsProvider {
 
     private void material(FFMaterial material) {
 
-        tag(material.getOreBlockTag()).add(material.getOreBlock().getRegistryObject().get());
-        tag(material.getDeepslateOreBlockTag()).add(material.getDeepslateOreBlock().getRegistryObject().get());
-        tag(material.getBlockRawBlockTag()).add(material.getBlockRawBlock().getRegistryObject().get());
-        tag(material.getBlockBlockTag()).add(material.getBlockBlock().getRegistryObject().get());
-        tag(material.getNetherOreBlockTag()).add(material.getNetherOreBlock().getRegistryObject().get());
+        tag(material.getBlockTags().getOre()).add(material.getBlocks().getOre().get());
+        tag(material.getBlockTags().getDeepslateOre()).add(material.getBlocks().getDeepslateOre().get());
+        tag(material.getBlockTags().getBlockRaw()).add(material.getBlocks().getBlockRaw().get());
+        tag(material.getBlockTags().getBlock()).add(material.getBlocks().getBlock().get());
+        tag(material.getBlockTags().getNetherOre()).add(material.getBlocks().getNetherOre().get());
+
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(material.getBlocks().getOre().get())
+                .add(material.getBlocks().getDeepslateOre().get())
+                .add(material.getBlocks().getBlock().get())
+                .add(material.getBlocks().getBlockRaw().get())
+                .add(material.getBlocks().getNetherOre().get());
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(material.getBlocks().getOre().get())
+                .add(material.getBlocks().getDeepslateOre().get())
+                .add(material.getBlocks().getBlock().get())
+                .add(material.getBlocks().getBlockRaw().get())
+                .add(material.getBlocks().getNetherOre().get());
 
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(material.getOreBlock().getRegistryObject().get(), material.getDeepslateOreBlock().getRegistryObject().get(), material.getBlockBlock().getRegistryObject().get(), material.getBlockRawBlock().getRegistryObject().get(), material.getNetherOreBlock().getRegistryObject().get());
-        tag(BlockTags.NEEDS_STONE_TOOL).add(material.getOreBlock().getRegistryObject().get(), material.getDeepslateOreBlock().getRegistryObject().get(), material.getBlockBlock().getRegistryObject().get(), material.getBlockRawBlock().getRegistryObject().get(), material.getNetherOreBlock().getRegistryObject().get());
-        tag(BlockTags.BEACON_BASE_BLOCKS).add(material.getBlockBlock().getRegistryObject().get());
+        tag(BlockTags.BEACON_BASE_BLOCKS).add(material.getBlocks().getBlock().get());
 
 
     }

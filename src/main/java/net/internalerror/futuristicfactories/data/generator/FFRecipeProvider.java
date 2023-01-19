@@ -40,61 +40,61 @@ public class FFRecipeProvider extends RecipeProvider {
         }
 
         public static void material(Consumer<FinishedRecipe> consumer, FFMaterial material) {
-            if (material.getBlock() != null && material.getIngot() != null) {
-                Util.splitting(consumer, material.getBlockTag(), material.getBlock(), material.getIngot());
+            if (material.getBlockItems().getBlock() != null && material.getItems().getIngot() != null) {
+                Util.splitting(consumer, material.getBlockItemTags().getBlock(), material.getBlockItems().getBlock(), material.getItems().getIngot());
             }
-            if (material.getIngot() != null && material.getNugget() != null) {
-                Util.splitting(consumer, material.getIngotTag(), material.getIngot(), material.getNugget());
+            if (material.getItems().getIngot() != null && material.getItems().getNugget() != null) {
+                Util.splitting(consumer, material.getItemTags().getIngot(), material.getItems().getIngot(), material.getItems().getNugget());
             }
-            if (material.getBlockRaw() != null && material.getRaw() != null) {
-                Util.splitting(consumer, material.getBlockRawTag(), material.getBlockRaw(), material.getRaw());
+            if (material.getBlockItems().getBlockRaw() != null && material.getItems().getRaw() != null) {
+                Util.splitting(consumer, material.getBlockItemTags().getBlockRaw(), material.getBlockItems().getBlockRaw(), material.getItems().getRaw());
             }
-            if (material.getIngot() != null && material.getBlock() != null) {
-                Util.combining(consumer, material.getIngotTag(), material.getIngot(), material.getBlock());
+            if (material.getItems().getIngot() != null && material.getBlockItems().getBlock() != null) {
+                Util.combining(consumer, material.getItemTags().getIngot(), material.getItems().getIngot(), material.getBlockItems().getBlock());
             }
-            if (material.getNugget() != null && material.getIngot() != null) {
-                Util.combining(consumer, material.getNuggetTag(), material.getNugget(), material.getIngot());
+            if (material.getItems().getNugget() != null && material.getItems().getIngot() != null) {
+                Util.combining(consumer, material.getItemTags().getNugget(), material.getItems().getNugget(), material.getItems().getIngot());
             }
-            if (material.getRaw() != null && material.getBlockRaw() != null) {
-                Util.combining(consumer, material.getRawTag(), material.getRaw(), material.getBlockRaw());
+            if (material.getItems().getRaw() != null && material.getBlockItems().getBlockRaw() != null) {
+                Util.combining(consumer, material.getItemTags().getRaw(), material.getItems().getRaw(), material.getBlockItems().getBlockRaw());
             }
-            if (material.getBlockRaw() != null && material.getBlock() != null) {
-                Util.smelting(consumer, material.getBlockRawTag(), material.getBlockRaw(), material.getBlock());
+            if (material.getBlockItems().getBlockRaw() != null && material.getBlockItems().getBlock() != null) {
+                Util.smelting(consumer, material.getBlockItemTags().getBlockRaw(), material.getBlockItems().getBlockRaw(), material.getBlockItems().getBlock());
             }
-            if (material.getOre() != null && material.getIngot() != null) {
-                Util.smelting(consumer, material.getOreTag(), material.getOre(), material.getIngot());
+            if (material.getBlockItems().getOre() != null && material.getItems().getIngot() != null) {
+                Util.smelting(consumer, material.getBlockItemTags().getOre(), material.getBlockItems().getOre(), material.getItems().getIngot());
             }
-            if (material.getDeepslateOre() != null && material.getIngot() != null) {
-                Util.smelting(consumer, material.getDeepslateOreTag(), material.getDeepslateOre(), material.getIngot());
+            if (material.getBlockItems().getDeepslateOre() != null && material.getItems().getIngot() != null) {
+                Util.smelting(consumer, material.getBlockItemTags().getDeepslateOre(), material.getBlockItems().getDeepslateOre(), material.getItems().getIngot());
             }
-            if (material.getNetherOre() != null && material.getIngot() != null) {
-                Util.smelting(consumer, material.getNetherOreTag(), material.getNetherOre(), material.getIngot());
+            if (material.getBlockItems().getNetherOre() != null && material.getItems().getIngot() != null) {
+                Util.smelting(consumer, material.getBlockItemTags().getNetherOre(), material.getBlockItems().getNetherOre(), material.getItems().getIngot());
             }
-            if (material.getRaw() != null && material.getIngot() != null) {
-                Util.smelting(consumer, material.getRawTag(), material.getRaw(), material.getIngot());
+            if (material.getItems().getRaw() != null && material.getItems().getIngot() != null) {
+                Util.smelting(consumer, material.getItemTags().getRaw(), material.getItems().getRaw(), material.getItems().getIngot());
             }
-            if (material.getBlockRaw() != null && material.getBlock() != null) {
-                Util.blasting(consumer, material.getBlockRawTag(), material.getBlockRaw(), material.getBlock());
+            if (material.getBlockItems().getBlockRaw() != null && material.getBlockItems().getBlock() != null) {
+                Util.blasting(consumer, material.getBlockItemTags().getBlockRaw(), material.getBlockItems().getBlockRaw(), material.getBlockItems().getBlock());
             }
-            if (material.getOre() != null && material.getIngot() != null) {
-                Util.blasting(consumer, material.getOreTag(), material.getOre(), material.getIngot());
+            if (material.getBlockItems().getOre() != null && material.getItems().getIngot() != null) {
+                Util.blasting(consumer, material.getBlockItemTags().getOre(), material.getBlockItems().getOre(), material.getItems().getIngot());
             }
-            if (material.getDeepslateOre() != null && material.getIngot() != null) {
-                Util.blasting(consumer, material.getDeepslateOreTag(), material.getDeepslateOre(), material.getIngot());
+            if (material.getBlockItems().getDeepslateOre() != null && material.getItems().getIngot() != null) {
+                Util.blasting(consumer, material.getBlockItemTags().getDeepslateOre(), material.getBlockItems().getDeepslateOre(), material.getItems().getIngot());
             }
-            if (material.getNetherOre() != null && material.getIngot() != null) {
-                Util.blasting(consumer, material.getNetherOreTag(), material.getNetherOre(), material.getIngot());
+            if (material.getBlockItems().getNetherOre() != null && material.getItems().getIngot() != null) {
+                Util.blasting(consumer, material.getBlockItemTags().getNetherOre(), material.getBlockItems().getNetherOre(), material.getItems().getIngot());
             }
-            if (material.getRaw() != null && material.getIngot() != null) {
-                Util.blasting(consumer, material.getRawTag(), material.getRaw(), material.getIngot());
+            if (material.getItems().getRaw() != null && material.getItems().getIngot() != null) {
+                Util.blasting(consumer, material.getItemTags().getRaw(), material.getItems().getRaw(), material.getItems().getIngot());
             }
         }
 
         public static void splitting(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result) {
             ShapelessRecipeBuilder
-                    .shapeless(result.getRegistryObject().get(), 9)
+                    .shapeless(result.get(), 9)
                     .requires(ingredientTag)
-                    .unlockedBy("has_item", hasItem(ingredient.getRegistryObject().get()))
+                    .unlockedBy("has_item", hasItem(ingredient.get()))
                     .save(consumer, recipeLocation("splitting", ingredient, result));
         }
 
@@ -102,28 +102,28 @@ public class FFRecipeProvider extends RecipeProvider {
         public static void combining(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result) {
 
             ShapedRecipeBuilder
-                    .shaped(result.getRegistryObject().get())
+                    .shaped(result.get())
                     .pattern("iii")
                     .pattern("iii")
                     .pattern("iii")
                     .define('i', ingredientTag)
-                    .unlockedBy("has_item", hasItem(ingredient.getRegistryObject().get()))
+                    .unlockedBy("has_item", hasItem(ingredient.get()))
                     .save(consumer, recipeLocation("combining", ingredient, result));
 
         }
 
         public static void smelting(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result) {
             SimpleCookingRecipeBuilder
-                    .smelting(Ingredient.of(ingredientTag), result.getRegistryObject().get(), 0.7f, 200)
-                    .unlockedBy("has_item", hasItem(ingredient.getRegistryObject().get()))
+                    .smelting(Ingredient.of(ingredientTag), result.get(), 0.7f, 200)
+                    .unlockedBy("has_item", hasItem(ingredient.get()))
                     .save(consumer, recipeLocation("smelting", ingredient, result));
 
         }
 
         public static void blasting(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result) {
             SimpleCookingRecipeBuilder
-                    .blasting(Ingredient.of(ingredientTag), result.getRegistryObject().get(), 0.7f, 200)
-                    .unlockedBy("has_item", hasItem(ingredient.getRegistryObject().get()))
+                    .blasting(Ingredient.of(ingredientTag), result.get(), 0.7f, 200)
+                    .unlockedBy("has_item", hasItem(ingredient.get()))
                     .save(consumer, recipeLocation("blasting", ingredient, result));
 
         }

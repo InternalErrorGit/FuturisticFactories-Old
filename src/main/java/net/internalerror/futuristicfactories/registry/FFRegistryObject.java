@@ -1,5 +1,6 @@
 package net.internalerror.futuristicfactories.registry;
 
+import net.minecraft.tags.TagEntry;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -35,5 +36,9 @@ public abstract class FFRegistryObject<T extends ItemLike> {
     @Override
     public String toString() {
         return String.format("%s: %s", name_, registryObject_.getKey());
+    }
+
+    public T get() {
+        return registryObject_.get();
     }
 }

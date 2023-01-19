@@ -1,4 +1,4 @@
-package net.internalerror.futuristicfactories.data;
+package net.internalerror.futuristicfactories.data.tags;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
