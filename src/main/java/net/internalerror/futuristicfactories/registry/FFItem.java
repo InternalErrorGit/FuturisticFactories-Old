@@ -2,6 +2,7 @@ package net.internalerror.futuristicfactories.registry;
 
 import net.internalerror.futuristicfactories.FFTabs;
 import net.internalerror.futuristicfactories.FuturisticFactories;
+import net.internalerror.futuristicfactories.registry.util.FFRegistryItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

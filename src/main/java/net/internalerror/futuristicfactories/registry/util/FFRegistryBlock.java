@@ -1,5 +1,6 @@
-package net.internalerror.futuristicfactories.registry;
+package net.internalerror.futuristicfactories.registry.util;
 
+import net.internalerror.futuristicfactories.registry.FFBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 

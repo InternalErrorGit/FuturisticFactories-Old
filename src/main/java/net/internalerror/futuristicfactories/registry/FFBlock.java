@@ -1,6 +1,9 @@
 package net.internalerror.futuristicfactories.registry;
 
 import net.internalerror.futuristicfactories.FuturisticFactories;
+import net.internalerror.futuristicfactories.block.machine.crushing.CrushingMachineBlock;
+import net.internalerror.futuristicfactories.registry.util.FFRegistryBlock;
+import net.internalerror.futuristicfactories.registry.util.FFRegistryObject;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
@@ -127,6 +130,8 @@ public final class FFBlock {
     public static final FFRegistryBlock zinc_block_raw = new FFRegistryBlock("zinc_block_raw", () -> new Block(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.RAW_IRON).requiresCorrectToolForDrops().strength(5.0F, 6.0F)));
     public static final FFRegistryBlock zinc_block = new FFRegistryBlock("zinc_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.METAL).requiresCorrectToolForDrops().strength(5.0F, 6.0F).sound(SoundType.METAL)));
     public static final FFRegistryBlock zinc_nether_ore = new FFRegistryBlock("zinc_nether_ore", () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.NETHER).requiresCorrectToolForDrops().strength(3.0F, 3.0F).sound(SoundType.NETHER_GOLD_ORE), UniformInt.of(0, 1)));
+
+    public static final FFRegistryBlock crushing_machine = new FFRegistryBlock("crushing_machine", () -> new CrushingMachineBlock(BlockBehaviour.Properties.of(Material.METAL).strength(6f).requiresCorrectToolForDrops().noOcclusion()));
 
 
     public static RegistryObject<Block> register(FFRegistryObject<Block> registryBlock) {

@@ -1,4 +1,4 @@
-package net.internalerror.futuristicfactories;
+package net.internalerror.futuristicfactories.util;
 
 import net.minecraft.resources.ResourceLocation;
 

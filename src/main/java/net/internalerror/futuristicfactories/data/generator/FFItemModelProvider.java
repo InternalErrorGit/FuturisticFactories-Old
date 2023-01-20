@@ -1,6 +1,7 @@
 package net.internalerror.futuristicfactories.data.generator;
 
 import net.internalerror.futuristicfactories.data.FFMaterial;
+import net.internalerror.futuristicfactories.registry.FFBlock;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
@@ -22,6 +23,8 @@ public class FFItemModelProvider extends ItemModelProvider {
         for (FFMaterial material : FFMaterial.values()) {
             material(material);
         }
+
+        withExistingParent(FFBlock.crushing_machine.getName(), modLoc("block/" + FFBlock.crushing_machine.getName()));
 
 
     }

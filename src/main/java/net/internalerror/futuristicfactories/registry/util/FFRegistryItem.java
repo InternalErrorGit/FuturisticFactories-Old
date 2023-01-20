@@ -1,8 +1,7 @@
-package net.internalerror.futuristicfactories.registry;
+package net.internalerror.futuristicfactories.registry.util;
 
+import net.internalerror.futuristicfactories.registry.FFItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.ItemLike;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;

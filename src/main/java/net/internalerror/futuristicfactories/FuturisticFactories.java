@@ -1,9 +1,8 @@
 package net.internalerror.futuristicfactories;
 
 import com.mojang.logging.LogUtils;
-import net.internalerror.futuristicfactories.registry.FFBlock;
-import net.internalerror.futuristicfactories.registry.FFBlockItem;
-import net.internalerror.futuristicfactories.registry.FFItem;
+import net.internalerror.futuristicfactories.registry.*;
+import net.internalerror.futuristicfactories.util.FFResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -27,6 +26,12 @@ public class FuturisticFactories {
         FFItem.register(modEventBus);
         LOGGER.info("Initialization >> Registering Block Items");
         FFBlockItem.register(modEventBus);
+        LOGGER.info("Initialization >> Registering Block Entity Types");
+        FFBlockEntityType.register(modEventBus);
+        LOGGER.info("Initialization >> Registering Menus Types");
+        FFMenuType.register(modEventBus);
+        LOGGER.info("Initialization >> Registering Recipe Serializers");
+        FFRecipeSerializers.register(modEventBus);
         LOGGER.info("Initialization >> Ended");
 
 
@@ -39,6 +44,5 @@ public class FuturisticFactories {
         }
         return new FFResourceLocation(path);
     }
-
 
 }

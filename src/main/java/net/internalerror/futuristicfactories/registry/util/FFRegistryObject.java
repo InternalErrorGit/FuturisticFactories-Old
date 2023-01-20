@@ -1,4 +1,4 @@
-package net.internalerror.futuristicfactories.registry;
+package net.internalerror.futuristicfactories.registry.util;
 
 import net.minecraft.tags.TagEntry;
 import net.minecraft.world.level.ItemLike;

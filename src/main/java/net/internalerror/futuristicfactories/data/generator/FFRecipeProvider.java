@@ -2,7 +2,8 @@ package net.internalerror.futuristicfactories.data.generator;
 
 import net.internalerror.futuristicfactories.FuturisticFactories;
 import net.internalerror.futuristicfactories.data.FFMaterial;
-import net.internalerror.futuristicfactories.registry.FFRegistryObject;
+import net.internalerror.futuristicfactories.data.recipe.builder.CrushingRecipeBuilder;
+import net.internalerror.futuristicfactories.registry.util.FFRegistryObject;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
@@ -25,6 +26,7 @@ public class FFRecipeProvider extends RecipeProvider {
         for (FFMaterial material : FFMaterial.values()) {
             Util.material(consumer, material);
         }
+
 
     }
 
@@ -88,6 +90,13 @@ public class FFRecipeProvider extends RecipeProvider {
             if (material.getItems().getRaw() != null && material.getItems().getIngot() != null) {
                 Util.blasting(consumer, material.getItemTags().getRaw(), material.getItems().getRaw(), material.getItems().getIngot());
             }
+            if (material.getItems().getRaw() != null && material.getItems().getClump() != null && material.getItems().getDustDirty() != null) {
+                Util.crushing(consumer, material.getItemTags().getRaw(), material.getItems().getRaw(), material.getItems().getClump(), 2, material.getItems().getDustDirty(), 0.75f);
+            }
+            if (material.getItems().getCrystal() != null && material.getItems().getShard() != null && material.getItems().getDust() != null) {
+                Util.crushing(consumer, material.getItemTags().getCrystal(), material.getItems().getCrystal(), material.getItems().getShard(), 3, material.getItems().getDust(), 0.75f);
+            }
+
         }
 
         public static void splitting(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result) {
@@ -96,6 +105,18 @@ public class FFRecipeProvider extends RecipeProvider {
                     .requires(ingredientTag)
                     .unlockedBy("has_item", hasItem(ingredient.get()))
                     .save(consumer, recipeLocation("splitting", ingredient, result));
+        }
+
+        public static void crushing(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result, int resultCount) {
+            CrushingRecipeBuilder.crushing(Ingredient.of(ingredientTag), result.get(), 200, resultCount)
+                    .unlockedBy("has_item", hasItem(ingredient.get()))
+                    .save(consumer, recipeLocation("crushing", ingredient, result));
+        }
+
+        public static void crushing(Consumer<FinishedRecipe> consumer, TagKey<Item> ingredientTag, FFRegistryObject<Item> ingredient, FFRegistryObject<Item> result, int resultCount, FFRegistryObject<Item> pSecondaryResult, float pSecondaryResultChance) {
+            CrushingRecipeBuilder.crushing(Ingredient.of(ingredientTag), result.get(), 200, resultCount, pSecondaryResult.get(), pSecondaryResultChance)
+                    .unlockedBy("has_item", hasItem(ingredient.get()))
+                    .save(consumer, recipeLocation("crushing", ingredient, result));
         }
 
 
