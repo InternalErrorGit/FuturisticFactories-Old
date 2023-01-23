@@ -9,7 +9,7 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.internalerror.futuristicfactories.data.recipe.CrushingRecipe;
-import net.internalerror.futuristicfactories.registry.FFBlock;
+import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -25,7 +25,7 @@ public class CrushingRecipeCategory implements IRecipeCategory<CrushingRecipe> {
 
     public CrushingRecipeCategory(IGuiHelper pGuiHelper) {
         this.background = pGuiHelper.createDrawable(texture, 0, 0, 176, 190);
-        this.icon = pGuiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(FFBlock.crushing_machine.get()));
+        this.icon = pGuiHelper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(FFBlocks.crushing_machine.get()));
     }
 
     @Override

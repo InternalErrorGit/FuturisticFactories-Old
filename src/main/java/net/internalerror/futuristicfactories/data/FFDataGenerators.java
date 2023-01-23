@@ -23,11 +23,17 @@ public class FFDataGenerators {
         DataGenerator dataGenerator = event.getGenerator();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
+        TextureColorProvider provider = new TextureColorProvider();
+
+
         dataGenerator.addProvider(true, new FFLanguageProvider(dataGenerator));
         dataGenerator.addProvider(true, new FFBlockStateProvider(dataGenerator, existingFileHelper));
         dataGenerator.addProvider(true, new FFRecipeProvider(dataGenerator));
         dataGenerator.addProvider(true, new FFBlockTagsProvider(dataGenerator, existingFileHelper));
         dataGenerator.addProvider(true, new FFItemModelProvider(dataGenerator, existingFileHelper));
         dataGenerator.addProvider(true, new FFItemTagsProvider(dataGenerator, new FFBlockTagsProvider(dataGenerator, existingFileHelper),existingFileHelper));
+
+
+
     }
 }

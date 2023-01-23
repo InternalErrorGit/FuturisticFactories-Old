@@ -21,15 +21,15 @@ public class FuturisticFactories {
 
         LOGGER.info("Initialization >> Starting");
         LOGGER.info("Initialization >> Registering Blocks");
-        FFBlock.register(modEventBus);
+        FFBlocks.register(modEventBus);
         LOGGER.info("Initialization >> Registering Items");
-        FFItem.register(modEventBus);
+        FFItems.register(modEventBus);
         LOGGER.info("Initialization >> Registering Block Items");
-        FFBlockItem.register(modEventBus);
+        FFBlockItems.register(modEventBus);
         LOGGER.info("Initialization >> Registering Block Entity Types");
-        FFBlockEntityType.register(modEventBus);
+        FFBlockEntityTypes.register(modEventBus);
         LOGGER.info("Initialization >> Registering Menus Types");
-        FFMenuType.register(modEventBus);
+        FFMenuTypes.register(modEventBus);
         LOGGER.info("Initialization >> Registering Recipe Serializers");
         FFRecipeSerializers.register(modEventBus);
         LOGGER.info("Initialization >> Ended");

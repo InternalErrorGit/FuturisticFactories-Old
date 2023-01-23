@@ -1,7 +1,7 @@
 package net.internalerror.futuristicfactories.data.generator;
 
-import net.internalerror.futuristicfactories.registry.FFBlock;
-import net.internalerror.futuristicfactories.registry.FFItem;
+import net.internalerror.futuristicfactories.registry.FFBlocks;
+import net.internalerror.futuristicfactories.registry.FFItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -16,7 +16,7 @@ public class FFLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
-        FFBlock.Util.getBlocks().forEach(block -> add(block.getRegistryObject().get(), block.getName()));
-        FFItem.getAll().forEach(item -> add(item.getRegistryObject().get(), item.getName()));
+        FFBlocks.Util.getAll().forEach(block -> add(block.get(), block.getId().getPath()));
+        FFItems.Util.getAll().forEach(item -> add(item.get(), item.getId().getPath()));
     }
 }

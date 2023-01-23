@@ -2,7 +2,7 @@ package net.internalerror.futuristicfactories.block.machine.crushing;
 
 import net.internalerror.futuristicfactories.data.recipe.CrushingRecipe;
 import net.internalerror.futuristicfactories.data.recipe.type.CrushingRecipeType;
-import net.internalerror.futuristicfactories.registry.FFBlockEntityType;
+import net.internalerror.futuristicfactories.registry.FFBlockEntityTypes;
 import net.internalerror.futuristicfactories.screen.CrushingMachineMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -56,7 +56,7 @@ public class CrushingMachineBlockEntity extends BlockEntity implements MenuProvi
 
 
     public CrushingMachineBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(FFBlockEntityType.crushing_machine.get(), blockPos, blockState);
+        super(FFBlockEntityTypes.crushing_machine.get(), blockPos, blockState);
         data = new ContainerData() {
             @Override
             public int get(int index) {

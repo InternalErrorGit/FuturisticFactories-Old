@@ -1,7 +1,7 @@
 package net.internalerror.futuristicfactories.data.generator;
 
 import net.internalerror.futuristicfactories.FuturisticFactories;
-import net.internalerror.futuristicfactories.registry.FFBlock;
+import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -16,14 +16,12 @@ public class FFBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        FFBlock.Util.getSimpleBlocks().forEach(block -> {
-            simpleBlock(block.getRegistryObject().get());
-
-            FuturisticFactories.LOGGER.info(block.getRegistryObject().getId().getPath());
+        FFBlocks.Util.getSimpleBlocks().forEach(block -> {
+            simpleBlock(block.get());
         });
 
 
-        horizontalBlock(FFBlock.crushing_machine.get(), getId("block/crushing_machine_side"), getId("block/crushing_machine_front"), getId("block/crushing_machine_top"));
+        horizontalBlock(FFBlocks.crushing_machine.get(), getId("block/crushing_machine_side"), getId("block/crushing_machine_front"), getId("block/crushing_machine_top"));
 
 
     }

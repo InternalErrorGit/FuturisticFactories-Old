@@ -1,6 +1,6 @@
 package net.internalerror.futuristicfactories.block.machine.crushing;
 
-import net.internalerror.futuristicfactories.registry.FFBlockEntityType;
+import net.internalerror.futuristicfactories.registry.FFBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -89,6 +89,6 @@ public class CrushingMachineBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState blockState, BlockEntityType<T> blockEntityType) {
-        return createTickerHelper(blockEntityType, FFBlockEntityType.crushing_machine.get(), CrushingMachineBlockEntity::tick);
+        return createTickerHelper(blockEntityType, FFBlockEntityTypes.crushing_machine.get(), CrushingMachineBlockEntity::tick);
     }
 }

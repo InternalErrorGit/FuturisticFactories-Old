@@ -2,8 +2,8 @@ package net.internalerror.futuristicfactories.screen;
 
 import net.internalerror.futuristicfactories.FuturisticFactories;
 import net.internalerror.futuristicfactories.block.machine.crushing.CrushingMachineBlockEntity;
-import net.internalerror.futuristicfactories.registry.FFBlock;
-import net.internalerror.futuristicfactories.registry.FFMenuType;
+import net.internalerror.futuristicfactories.registry.FFBlocks;
+import net.internalerror.futuristicfactories.registry.FFMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -26,7 +26,7 @@ public class CrushingMachineMenu extends AbstractContainerMenu {
     }
 
     public CrushingMachineMenu(int id, Inventory inventory, BlockEntity blockEntity, ContainerData data) {
-        super(FFMenuType.crushing_machine_menu.get(), id);
+        super(FFMenuTypes.crushing_machine_menu.get(), id);
         checkContainerSize(inventory, 6);
         this.blockEntity = (CrushingMachineBlockEntity) blockEntity;
         this.level = inventory.player.level;
@@ -102,7 +102,7 @@ public class CrushingMachineMenu extends AbstractContainerMenu {
 
     @Override
     public boolean stillValid(Player player) {
-        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), player, FFBlock.crushing_machine.get());
+        return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()), player, FFBlocks.crushing_machine.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {
