@@ -1,4 +1,4 @@
-package net.internalerror.futuristicfactories.data.recipe.integration;
+package net.internalerror.futuristicfactories.data.recipe.category;
 
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -8,6 +8,7 @@ import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
+import net.internalerror.futuristicfactories.data.recipe.integration.JEIFFPlugin;
 import net.internalerror.futuristicfactories.data.recipe.CrushingRecipe;
 import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.minecraft.network.chat.Component;

@@ -3,8 +3,9 @@ package net.internalerror.futuristicfactories.registry;
 import static net.internalerror.futuristicfactories.FuturisticFactories.MOD_ID;
 
 import java.util.function.Supplier;
+
+import net.internalerror.futuristicfactories.block.entity.machine.crushing.CrushingMachineBlockEntity;
 import net.internalerror.futuristicfactories.FuturisticFactories;
-import net.internalerror.futuristicfactories.block.machine.crushing.CrushingMachineBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

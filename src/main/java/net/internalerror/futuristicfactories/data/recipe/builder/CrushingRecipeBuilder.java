@@ -1,6 +1,6 @@
 package net.internalerror.futuristicfactories.data.recipe.builder;
 
-import net.internalerror.futuristicfactories.data.recipe.builder.result.CrushingRecipeResult;
+import net.internalerror.futuristicfactories.data.recipe.result.CrushingRecipeResult;
 import net.internalerror.futuristicfactories.data.recipe.serializer.CrushingRecipeSerializer;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
@@ -50,13 +50,13 @@ public class CrushingRecipeBuilder implements RecipeBuilder {
 
     @Override
     public @NotNull CrushingRecipeBuilder unlockedBy(@NotNull String pCriterionName, @NotNull CriterionTriggerInstance pCriterionTrigger) {
-        this.aAdvancement.addCriterion(pCriterionName, pCriterionTrigger);
+        aAdvancement.addCriterion(pCriterionName, pCriterionTrigger);
         return this;
     }
 
     @Override
     public @NotNull RecipeBuilder group(@Nullable String pGroupName) {
-        this.aGroup = pGroupName;
+        aGroup = pGroupName;
         return this;
     }
 

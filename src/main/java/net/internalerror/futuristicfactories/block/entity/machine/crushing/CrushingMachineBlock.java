@@ -1,5 +1,6 @@
-package net.internalerror.futuristicfactories.block.machine.crushing;
+package net.internalerror.futuristicfactories.block.entity.machine.crushing;
 
+import net.internalerror.futuristicfactories.block.entity.machine.crushing.CrushingMachineBlockEntity;
 import net.internalerror.futuristicfactories.registry.FFBlockEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;

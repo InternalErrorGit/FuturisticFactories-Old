@@ -1,4 +1,4 @@
-package net.internalerror.futuristicfactories.data.recipe.builder.result;
+package net.internalerror.futuristicfactories.data.recipe.result;
 
 import com.google.gson.JsonObject;
 import net.internalerror.futuristicfactories.data.recipe.serializer.CrushingRecipeSerializer;

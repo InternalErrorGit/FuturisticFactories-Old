@@ -1,6 +1,6 @@
 package net.internalerror.futuristicfactories.data.recipe;
 
-import net.internalerror.futuristicfactories.block.machine.crushing.CrushingMachineBlockEntity;
+import net.internalerror.futuristicfactories.block.entity.machine.crushing.CrushingMachineBlockEntity;
 import net.internalerror.futuristicfactories.data.recipe.serializer.CrushingRecipeSerializer;
 import net.internalerror.futuristicfactories.data.recipe.type.CrushingRecipeType;
 import net.minecraft.resources.ResourceLocation;

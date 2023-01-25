@@ -1,7 +1,8 @@
-package net.internalerror.futuristicfactories.screen;
+package net.internalerror.futuristicfactories.gui.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
+import net.internalerror.futuristicfactories.gui.menu.CrushingMachineMenu;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;

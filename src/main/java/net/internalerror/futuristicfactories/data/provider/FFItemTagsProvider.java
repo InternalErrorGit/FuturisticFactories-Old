@@ -1,6 +1,6 @@
-package net.internalerror.futuristicfactories.data.generator;
+package net.internalerror.futuristicfactories.data.provider;
 
-import net.internalerror.futuristicfactories.data.FFMaterial;
+import net.internalerror.futuristicfactories.util.FFMaterial;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;

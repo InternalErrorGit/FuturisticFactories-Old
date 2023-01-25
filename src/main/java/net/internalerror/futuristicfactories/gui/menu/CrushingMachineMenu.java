@@ -1,7 +1,7 @@
-package net.internalerror.futuristicfactories.screen;
+package net.internalerror.futuristicfactories.gui.menu;
 
 import net.internalerror.futuristicfactories.FuturisticFactories;
-import net.internalerror.futuristicfactories.block.machine.crushing.CrushingMachineBlockEntity;
+import net.internalerror.futuristicfactories.block.entity.machine.crushing.CrushingMachineBlockEntity;
 import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.internalerror.futuristicfactories.registry.FFMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;

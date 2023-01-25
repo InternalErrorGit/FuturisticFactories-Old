@@ -6,6 +6,9 @@ import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.internalerror.futuristicfactories.data.recipe.CrushingRecipe;
+import net.internalerror.futuristicfactories.data.recipe.PulverizingRecipe;
+import net.internalerror.futuristicfactories.data.recipe.category.CrushingRecipeCategory;
+import net.internalerror.futuristicfactories.data.recipe.category.PulverizingRecipeCategory;
 import net.internalerror.futuristicfactories.data.recipe.type.CrushingRecipeType;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
@@ -19,6 +22,7 @@ import static net.internalerror.futuristicfactories.FuturisticFactories.MOD_ID;
 @JeiPlugin
 public class JEIFFPlugin implements IModPlugin {
     public static RecipeType<CrushingRecipe> crushing_type = new RecipeType<>(CrushingRecipeCategory.UID, CrushingRecipe.class);
+    public static RecipeType<PulverizingRecipe> pulverizing_type = new RecipeType<>(PulverizingRecipeCategory.UID, PulverizingRecipe.class);
 
 
     @Override

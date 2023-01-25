@@ -1,9 +1,9 @@
-package net.internalerror.futuristicfactories.block.machine.crushing;
+package net.internalerror.futuristicfactories.block.entity.machine.crushing;
 
+import net.internalerror.futuristicfactories.gui.menu.CrushingMachineMenu;
 import net.internalerror.futuristicfactories.data.recipe.CrushingRecipe;
 import net.internalerror.futuristicfactories.data.recipe.type.CrushingRecipeType;
 import net.internalerror.futuristicfactories.registry.FFBlockEntityTypes;
-import net.internalerror.futuristicfactories.screen.CrushingMachineMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

@@ -1,10 +1,10 @@
-package net.internalerror.futuristicfactories.data;
+package net.internalerror.futuristicfactories.util;
 
 import net.internalerror.futuristicfactories.data.tags.FFBlockItemTags;
 import net.internalerror.futuristicfactories.data.tags.FFBlockTags;
 import net.internalerror.futuristicfactories.data.tags.FFItemTags;
-import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.internalerror.futuristicfactories.registry.FFBlockItems;
+import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.internalerror.futuristicfactories.registry.FFItems;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;

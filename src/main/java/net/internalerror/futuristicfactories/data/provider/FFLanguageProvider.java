@@ -1,4 +1,4 @@
-package net.internalerror.futuristicfactories.data.generator;
+package net.internalerror.futuristicfactories.data.provider;
 
 import net.internalerror.futuristicfactories.registry.FFBlocks;
 import net.internalerror.futuristicfactories.registry.FFItems;

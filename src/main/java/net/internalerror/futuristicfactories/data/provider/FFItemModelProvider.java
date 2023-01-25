@@ -1,9 +1,9 @@
-package net.internalerror.futuristicfactories.data.generator;
+package net.internalerror.futuristicfactories.data.provider;
 
 import static net.internalerror.futuristicfactories.FuturisticFactories.MOD_ID;
 
-import net.internalerror.futuristicfactories.data.FFMaterial;
 import net.internalerror.futuristicfactories.registry.FFBlocks;
+import net.internalerror.futuristicfactories.util.FFMaterial;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;

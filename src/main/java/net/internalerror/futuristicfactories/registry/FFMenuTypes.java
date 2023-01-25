@@ -2,8 +2,8 @@ package net.internalerror.futuristicfactories.registry;
 
 import static net.internalerror.futuristicfactories.FuturisticFactories.MOD_ID;
 
+import net.internalerror.futuristicfactories.gui.menu.CrushingMachineMenu;
 import net.internalerror.futuristicfactories.FuturisticFactories;
-import net.internalerror.futuristicfactories.screen.CrushingMachineMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
