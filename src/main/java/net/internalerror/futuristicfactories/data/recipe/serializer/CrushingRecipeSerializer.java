@@ -27,7 +27,7 @@ public class CrushingRecipeSerializer implements RecipeSerializer<CrushingRecipe
 
     public static final CrushingRecipeSerializer instance = new CrushingRecipeSerializer();
     public static final ResourceLocation id = new ResourceLocation(MOD_ID, "crushing");
-    private int defaultProcessingTime = 200;
+    private final int defaultProcessingTime = 200;
 
 
     @Override

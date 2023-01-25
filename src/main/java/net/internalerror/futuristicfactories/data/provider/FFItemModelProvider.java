@@ -25,6 +25,7 @@ public class FFItemModelProvider extends ItemModelProvider {
     }
 
     withExistingParent(FFBlocks.crushing_machine.getId().getPath(), modLoc("block/" + FFBlocks.crushing_machine.getId().getPath()));
+    withExistingParent(FFBlocks.pulverizing_machine.getId().getPath(), modLoc("block/" + FFBlocks.pulverizing_machine.getId().getPath()));
 
 
   }

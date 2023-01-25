@@ -21,6 +21,7 @@ public class FFBlockStateProvider extends BlockStateProvider {
 
 
         horizontalBlock(FFBlocks.crushing_machine.get(), getId("block/crushing_machine_side"), getId("block/crushing_machine_front"), getId("block/crushing_machine_top"));
+        horizontalBlock(FFBlocks.pulverizing_machine.get(), getId("block/pulverizing_machine_side"), getId("block/pulverizing_machine_front"), getId("block/pulverizing_machine_top"));
 
 
     }
